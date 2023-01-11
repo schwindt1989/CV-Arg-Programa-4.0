@@ -3,38 +3,8 @@
 body {
     background: #99c9cc;
 }
-/* navegacion
-div{
-    
-    display:block;
-    padding: 5px;
-    margin: 5px;
-}
-
-#c1{
-    background: rgb(50, 5, 124);
-    width: 70%;
-    height: 100%;
-    margin:3% auto;
-    padding: 3%;
-}
 
 
-
-.grid div{
-    display: grid;
-    background: rgb(197, 32, 161);
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 300px 700px;
-    
-    
-}
-    
-
-.grid div:hover{
-    border: 1px solid #1fb34c;
-}
-*/
 #c1{
     background: rgb(197, 197, 197);
     width: 70%;
@@ -74,14 +44,12 @@ h3{
     display: grid;
     grid-template-columns: 33% 33% 33%;
     gap: 1em;
-    
 }
 
 
 .grid > div{
     background: rgb(236, 233, 240);
-    padding: 1em;
-    
+    padding: 1em;  
 }
 
 .grid > div:hover{
@@ -107,8 +75,6 @@ h3{
     display: block;
     border-radius: 10px;
 }
-
-
 
 /* foother*/
 footer {
@@ -149,7 +115,7 @@ footer {
     padding: 2%;
     color: #c3d7df;
 }
-  
+
 .social i:hover {
     color: #8b5252;
 }
@@ -182,3 +148,74 @@ a:hover {
     color: #e7be8f;
     font-family: Georgia, 'Times New Roman', Times, serif;
   }
+
+@media (max-width: 700px) {
+    body {
+        background: #cc8bb9;
+    }
+
+    #c1{
+        background: rgb(197, 197, 197);
+        width: 90%;
+        height: 100%;
+        margin:3% auto;
+        padding: 3%;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        gap: 3em;
+    
+    }
+    .grid > div{
+        background: rgb(236, 233, 240);
+        padding: 1em;
+        width: 70%;
+        height: 100%;
+        display: block;
+        text-align: center;
+        
+    }
+    #elemento1{
+        grid-column: 1/4;
+    }
+    #elemento3{
+        grid-column: 1/4;
+    }
+    #elemento4{
+        grid-column: 1/4;
+    }
+    #elemento5{
+        grid-column: 1/4;
+        height: 90%;
+    }
+    #parrafo{
+        font: bold 20px san-serif;
+    }
+    
+    .social{
+        display: block;
+        text-align: right;
+        font-size: 15px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
